@@ -56,7 +56,7 @@ class Users extends Controller
             }
 
 
-            if (empty($data['email_err']) && empty($data['firstName_err']) && empty($data['lastName_err']) && empty($data['password_err']) && empty($data['confirmPassword_err'])) {
+            if (empty($data['email_err']) && empty($data['firstName_err']) && empty($data['lastName_err']) && empty($data['password_err'])) {
                 $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
                 if ($this->userModel->register($data)) {
                     header('Location:' . URLROOT . '/users/login');
@@ -98,16 +98,27 @@ class Users extends Controller
             ];
 
             if (empty($data['email'])) {
-                $data['email_err'] = 'Please enter email';
+                $data['email_err'] = 'Įveskite elektroninio pašto adresą';
             } elseif (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-                $data['email_err'] = 'Elektroninis paštas neatitinka teisingo formato';
+                $data['email_err'] = 'Elektroninis paštas neatitinka formato';
             }
             if (empty($data['password'])) {
-                $data['password_err'] = 'Please enter Password';
+                $data['password_err'] = 'Prašome įvesti slaptažodį';
+            }
+
+            if ($this->userModel->findUserByEmail($data['email'])) {
+            } else {
+                $data['email_err'] = 'Tokio elektroninio pašto adreso nėra';
             }
 
             if (empty($data['email_err']) && empty($data['password_err'])) {
-                die('success');
+                $loggedInUser = $this->userModel->logIn($data['email'], $data['password']);
+                if ($loggedInUser) {
+                    die('success');
+                } else {
+                    $data['password_err'] = 'Slaptažodis neteisingas';
+                    $this->view('users/login', $data);
+                }
             } else {
                 $this->view('users/login', $data);
             }

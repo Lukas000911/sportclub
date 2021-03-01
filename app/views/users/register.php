@@ -28,7 +28,7 @@
                     <span class="invalid-feedback"><?php echo $data['password_err']; ?></span>
                 </div>
                 <div class="form-group">
-                    <label for="Password">Telefono numeris: </label>
+                    <label for="phoneNum">Telefono numeris: </label>
                     <input type="text" name="phoneNum" class="form-control form-control-lg <?php echo (!empty($data['password_err'])) ? 'is-invalid' : '' ?>" value="<?php echo $data['phoneNum']; ?>">
 
                 </div>
