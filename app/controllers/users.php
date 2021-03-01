@@ -136,10 +136,18 @@ class Users extends Controller
 
     public function createSession($loggedInUser)
     {
-
         $_SESSION['user_id'] = $loggedInUser->id;
         $_SESSION['user_email'] = $loggedInUser->email;
         $_SESSION['user_name'] = $loggedInUser->firstName;
         header('Location:' . URLROOT . '/pages/index');
+    }
+
+    public function logOut()
+    {
+        unset($_SESSION['user_id']);
+        unset($_SESSION['user_email']);
+        unset($_SESSION['user_name']);
+        session_destroy();
+        header('Location:' . URLROOT . 'users/login');
     }
 }
