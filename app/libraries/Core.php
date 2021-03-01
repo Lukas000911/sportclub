@@ -1,10 +1,11 @@
 <?php
 
 
-/* App Core Class
-* Creates URL & loads core controller
-* URL FORMAT - /controller/method/params
-*/
+/** 
+ * App Core Class
+ * Creates URL & loads core controller
+ * URL FORMAT - /controller/method/params
+ */
 
 class Core
 {
@@ -50,9 +51,10 @@ class Core
     }
 
 
-    /* return clean URL 
-    * check if $_GET is set
-    */
+    /**  
+     * return clean URL 
+     * check if $_GET is set
+     */
     public function getUrl()
     {
         if (isset($_GET['url'])) {

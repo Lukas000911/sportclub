@@ -1,8 +1,11 @@
 <?php
 
-// PDO Database Class to connect to database,
-// create prepared statements, bind values,
-// return rows and results
+
+/**
+ * PDO Database Class to connect to database
+ * reate prepared statements
+ * return rows and results
+ */
 
 class Database
 {

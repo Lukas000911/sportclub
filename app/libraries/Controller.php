@@ -1,9 +1,10 @@
 <?php
 
 
-/* Base App Controller 
-* Loads models and views
-*/
+/**
+ * Base App Controller 
+ * Loads models and views
+ */
 class Controller
 {
     //load model

@@ -11,7 +11,7 @@ define('DB_NAME', 'Sport');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //URL Root
-define('URLROOT', 'http://localhost/sport/');
+define('URLROOT', 'http://localhost/SPORT/');
 
 //Site Name
 define('SITENAME', 'SportZal');
