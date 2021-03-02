@@ -5,6 +5,7 @@
  * Base App Controller 
  * Loads models and views
  */
+
 class Controller
 {
     //load model

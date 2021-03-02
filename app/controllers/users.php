@@ -55,6 +55,10 @@ class Users extends Controller
                 $data['password_err'] = 'Slaptažodį privalo sudaryti bent 6 simboliai';
             }
 
+            if (empty($data['phoneNum']) && empty($data['homeAddress'])) {
+                $data['phoneNum'] = '0';
+                $data['homeAddress'] = '-';
+            }
 
             if (empty($data['email_err']) && empty($data['firstName_err']) && empty($data['lastName_err']) && empty($data['password_err'])) {
                 $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);

@@ -11,7 +11,7 @@
                     <a class="nav-link " aria-current="page" href="<?php echo URLROOT; ?>">Titulinis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">Apie Mus</a>
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/posts">Atsiliepimai</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto mb-2 mb-md-0">

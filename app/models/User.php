@@ -5,6 +5,7 @@
  * Query statements
  * Bind values
  */
+
 class User
 {
     private $db;
