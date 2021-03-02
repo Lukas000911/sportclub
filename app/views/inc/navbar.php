@@ -8,14 +8,14 @@
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link " aria-current="page" href="<?php echo URLROOT; ?>"><b>Titulinis</b></a>
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/posts"><b>Atsiliepimai</b></a>
+                    <a class="nav-link" href="<?php echo URLROOT; ?>posts"><b>Atsiliepimai</b></a>
                 </div>
                 <div class="navbar-nav ml-auto">
                     <?php if (isset($_SESSION['user_id'])) : ?>
-                        <a class="nav-link " aria-current="page" href="<?php echo URLROOT; ?>/users/logout"><b>Logout</b></a>
+                        <a class="nav-link " aria-current="page" href="<?php echo URLROOT; ?>users/logout"><b>Logout</b></a>
                     <?php else : ?>
-                        <a class="nav-link" href="<?php echo URLROOT; ?>/users/register"><b>Registruotis</b></a>
-                        <a class="nav-link" href="<?php echo URLROOT; ?>/users/login"><b>Prisijungti</b></a>
+                        <a class="nav-link" href="<?php echo URLROOT; ?>users/register"><b>Registruotis</b></a>
+                        <a class="nav-link" href="<?php echo URLROOT; ?>users/login"><b>Prisijungti</b></a>
                     <?php endif; ?>
                 </div>
             </div>

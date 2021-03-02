@@ -10,14 +10,17 @@ require APPROOT . '/views/inc/header.php';
     <div id="threeLorem" class="d-flex justify-content-center align-items-center">
         <div class="photoDivs">
             <div id="img1"></div>
+            <h5 class="text-center">Kovinis Sambo</h5>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a beatae minus facere non, delectus, ad deserunt praesentium similique adipisci quis optio suscipit corrupti voluptatem obcaecati odit maxime neque magni.</p>
         </div>
         <div class="photoDivs">
             <div id="img2"></div>
+            <h5 class="text-center">Mišrūs kovos menai</h5>
             <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam veniam, placeat quisquam consequatur ducimus, porro voluptates consequuntur sequi quidem possimus non sunt pariatur accusantium, laudantium expedita! Dolorem quia reiciendis et.</p>
         </div>
         <div class="photoDivs">
             <div id="img3"></div>
+            <h5 class="text-center">Boksas</h5>
             <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga neque recusandae quidem earum quae minus, voluptatum tempora delectus maxime, illum blanditiis quis? Neque atque et sequi perspiciatis odio! Eligendi, quod.</p>
         </div>
     </div>

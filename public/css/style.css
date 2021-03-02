@@ -67,7 +67,14 @@ body{
 
 .googleMap{
     margin-top: 10px;
-    
+}
+
+.photoDivs p{
+    font-size: small;
+}
+
+.photoDivs h5{
+    margin-top: 5px;
 }
 
 .footer{
@@ -113,7 +120,7 @@ body{
 }
 
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
     #threeLorem{
         flex-direction: column;
     }
