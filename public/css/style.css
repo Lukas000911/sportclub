@@ -76,3 +76,51 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+@media only screen and (max-width: 1400px){
+    .photoDivs{
+        width: 50%;
+        height: 400px;
+        margin: 5px;
+        border: 1px solid grey;
+    }
+}
+
+
+@media only screen and (max-width: 1100px){
+    #threeLorem{
+        flex-direction: column;
+    }
+    .photoDivs{
+        width: 50%;
+        height: 400px;
+        margin: 5px;
+        border: 1px solid grey;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    #threeLorem{
+        flex-direction: column;
+    }
+    .photoDivs{
+        width: 50%;
+        height: 400px;
+        margin: 5px;
+        border: 1px solid grey;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    #threeLorem{
+        flex-direction: column;
+    }
+    .photoDivs{
+        width: 90%;
+        height: 400px;
+        margin: 5px;
+        border: 1px solid grey;
+    }
+}

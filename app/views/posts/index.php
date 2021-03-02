@@ -29,6 +29,7 @@
                     <div class="col">
                         <input type="submit" value="Paskelbti" class="btn btn-success btn-block mt-2">
                     </div>
+                    <br><br><br><br>
                 </div>
             </div>
         </form>
@@ -56,11 +57,7 @@
                 .then(data => {
 
                     displayComments();
-                    // if (data.success){
-                    // handleSuccessComment();
-                    // } else {
-                    // handleCommentError(data.errors)
-                    // }
+
                 })
                 .catch(error => console.error(error));
         }

@@ -2,15 +2,12 @@
 require APPROOT . '/views/inc/header.php';
 ?>
 
-
-
-
 <div class="photoDiv"></div>
 
 
 <div class="container">
 
-    <div class="d-flex justify-content-center align-items-center">
+    <div id="threeLorem" class="d-flex justify-content-center align-items-center">
         <div class="photoDivs">
             <div id="img1"></div>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a beatae minus facere non, delectus, ad deserunt praesentium similique adipisci quis optio suscipit corrupti voluptatem obcaecati odit maxime neque magni.</p>
